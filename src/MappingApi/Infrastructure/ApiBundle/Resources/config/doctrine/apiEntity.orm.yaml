@@ -1,0 +1,30 @@
+MappingApi\Domain\Api\Model\ApiEntity:
+  type: entity
+  repositoryClass: MappingApi\Infrastructure\ApiBundle\Repository\Doctrine\ApiEntityRepository
+  table: country
+  schema: schema_name # The schema the table lies in, for platforms that support schemas (Optional, >= 2.5)
+  readOnly: true
+  indexes:
+    name_index:
+      columns: [ name ]
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    uuid:
+      type: string
+      length: 255
+      unique: true
+      nullable: false
+    email:
+      type: string
+      length: 255
+      nullable: false
+    active:
+      type: boolean 
+      length: 1
+      nullable: false
+      default: 0
+    lifecycleCallbacks: {  }
