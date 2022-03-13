@@ -1,0 +1,8 @@
+
+kernel:
+    resource: ../src/MappingApi/Kernel.php
+    type: annotation
+
+main_page:
+    path: /
+    controller: MappingApi\Application\Controller\MainController::page
