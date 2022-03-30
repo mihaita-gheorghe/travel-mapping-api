@@ -1,21 +1,21 @@
 <?php
 
-namespace MappingApi\Test\Domain\Api;
+namespace MappingApiTests\Domain\Identity;
 
 use PHPUnit\Framework\TestCase;
-use MappingApi\Domain\Api\Model\ApiEntity;
-use MappingApi\Domain\Api\ValueObject\ApiEnvronment;
-use MappingApi\Domain\Api\ValueObject\CredentialsSet;
-use MappingApi\Domain\Api\Exception\DuplicateCredentialsSetException;
-use MappingApi\Domain\Api\Exception\CredentialsNotFoundException;
-use MappingApi\Domain\Api\Exception\InvalidEmailException;
+use MappingApi\Domain\Identity\Model\ApiEntity;
+use MappingApi\Domain\Identity\ValueObject\ApiEnvronment;
+use MappingApi\Domain\Identity\ValueObject\CredentialsSet;
+use MappingApi\Domain\Identity\Exception\DuplicateCredentialsSetException;
+use MappingApi\Domain\Identity\Exception\CredentialsNotFoundException;
+use MappingApi\Domain\Identity\Exception\InvalidEmailException;
 
 class ApiEntityTest extends TestCase
 {
 	public function testCreate() : ApiEntity
     {
 		$apiEntity = new ApiEntity(uniqid(), "test_email87@gmail.com", "Company one");
-		$this->assertInstanceOf('MappingApi\Domain\Api\Model\ApiEntity', $apiEntity);
+		$this->assertInstanceOf('MappingApi\Domain\Identity\Model\ApiEntity', $apiEntity);
 		return $apiEntity;
     }
 
@@ -30,7 +30,7 @@ class ApiEntityTest extends TestCase
 	{
 		$credentialsSet = new CredentialsSet('dev_server', ApiEnvronment::Development, 'https://test-api.com/rest/3.2/', 
 			'dev_01', 'irvrgwcr4uasa_oimnu');
-		$this->assertInstanceOf('MappingApi\Domain\Api\ValueObject\CredentialsSet', $credentialsSet);
+		$this->assertInstanceOf('MappingApi\Domain\Identity\ValueObject\CredentialsSet', $credentialsSet);
 		return $credentialsSet;
 	}
 

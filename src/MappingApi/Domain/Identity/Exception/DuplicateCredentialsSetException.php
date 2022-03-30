@@ -1,8 +1,8 @@
 <?php
 
-namespace MappingApi\Domain\Api\Exception;
+namespace MappingApi\Domain\Identity\Exception;
 
-use MappingApi\Domain\Api\Exception\CustomException;
+use MappingApi\Domain\Identity\Exception\CustomException;
 
 class DuplicateCredentialsSetException extends \LogicException 
 {

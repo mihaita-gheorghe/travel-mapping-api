@@ -1,8 +1,8 @@
 <?php
 
-namespace MappingApi\Domain\Api\Repository;
+namespace MappingApi\Domain\Identity\Repository;
 
-use MappingApi\Domain\Api\Model\ApiEntity;
+use MappingApi\Domain\Identity\Model\ApiEntity;
 
 interface ApiEntityRepositoryInterface
 {

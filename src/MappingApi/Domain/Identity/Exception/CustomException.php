@@ -1,6 +1,6 @@
 <?php
 
-namespace MappingApi\Domain\Api\Exception;
+namespace MappingApi\Domain\Identity\Exception;
 
 trait CustomException 
 {

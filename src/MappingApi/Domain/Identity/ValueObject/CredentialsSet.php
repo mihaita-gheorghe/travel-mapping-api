@@ -1,8 +1,8 @@
 <?php
 
-namespace MappingApi\Domain\Api\ValueObject;
+namespace MappingApi\Domain\Identity\ValueObject;
 
-use MappingApi\Domain\Api\ValueObject\ApiEnvronment;
+use MappingApi\Domain\Identity\ValueObject\ApiEnvronment;
 
 class CredentialsSet 
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MappingApi\Domain\Api\ValueObject;
+namespace MappingApi\Domain\Identity\ValueObject;
 
 enum ApiEnvronment: string 
 {

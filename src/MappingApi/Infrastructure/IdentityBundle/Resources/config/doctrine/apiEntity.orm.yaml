@@ -1,7 +1,7 @@
-MappingApi\Domain\Api\Model\ApiEntity:
+MappingApi\Domain\Identity\Model\ApiEntity:
   type: entity
-  repositoryClass: MappingApi\Infrastructure\ApiBundle\Repository\Doctrine\ApiEntityRepository
-  table: country
+  repositoryClass: MappingApi\Infrastructure\IdentityBundle\Repository\Doctrine\ApiEntityRepository
+  table: appEntity
   schema: schema_name # The schema the table lies in, for platforms that support schemas (Optional, >= 2.5)
   readOnly: true
   indexes:

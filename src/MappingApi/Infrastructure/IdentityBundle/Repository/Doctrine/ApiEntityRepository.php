@@ -1,9 +1,9 @@
 <?php
 
-namespace MappingApi\Infrastructure\ApiBundle\Repository\Doctrine;
+namespace MappingApi\Infrastructure\IdentityBundle\Repository\Doctrine;
 
-use MappingApi\Domain\Api\Model\ApiEntity;
-use \MappingApi\Domain\Api\Repository\ApiEntityRepositoryInterface;
+use MappingApi\Domain\Identity\Model\ApiEntity;
+use \MappingApi\Domain\Identity\Repository\ApiEntityRepositoryInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;

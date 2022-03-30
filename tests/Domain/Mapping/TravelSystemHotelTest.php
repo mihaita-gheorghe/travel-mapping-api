@@ -1,6 +1,6 @@
 <?php
 
-namespace MappingApi\Test\Domain\Mapping;
+namespace MappingApiTests\Domain\Mapping;
 
 use PHPUnit\Framework\TestCase;
 

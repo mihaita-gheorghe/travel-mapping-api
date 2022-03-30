@@ -4,11 +4,16 @@ namespace MappingApi\Application\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use MappingApi\Infrastructure\DoctrineLinkBundle\DoctrineYAMLAdapter;
+
 
 class MainController extends AbstractController
 {
     public function page(): Response
     {
+		
+		//$instance = DoctrineYAMLAdapter::getInstance();
+
 		$firstVar = "";
         // the template path is the relative file path from `templates/`
         return $this->render('base.html.twig', [

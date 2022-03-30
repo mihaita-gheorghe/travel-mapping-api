@@ -2,7 +2,7 @@
 
 namespace MappingApi\Domain\Geography\Exception;
 
-use MappingApi\Domain\Api\Exception\CustomException;
+use MappingApi\Domain\Identity\Exception\CustomException;
 
 class StateNotFoundException extends \LogicException
 {

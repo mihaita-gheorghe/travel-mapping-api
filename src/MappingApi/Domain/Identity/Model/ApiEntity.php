@@ -1,11 +1,11 @@
 <?php
 
-namespace MappingApi\Domain\Api\Model;
+namespace MappingApi\Domain\Identity\Model;
 
-use MappingApi\Domain\Api\ValueObject\CredentialsSet;
-use MappingApi\Domain\Api\Exception\DuplicateCredentialsSetException;
-use MappingApi\Domain\Api\Exception\CredentialsNotFoundException;
-use MappingApi\Domain\Api\Exception\InvalidEmailException;
+use MappingApi\Domain\Identity\ValueObject\CredentialsSet;
+use MappingApi\Domain\Identity\Exception\DuplicateCredentialsSetException;
+use MappingApi\Domain\Identity\Exception\CredentialsNotFoundException;
+use MappingApi\Domain\Identity\Exception\InvalidEmailException;
 
 class ApiEntity
 {

@@ -44,7 +44,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MappingApi\\Tests\\": "src/Test/"
+            "MappingApiTests\\": "tests/"
         }
     },
     "replace": {

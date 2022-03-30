@@ -1,6 +1,6 @@
 <?php
 
-namespace MappingApi\Test\Domain\Hotel;
+namespace MappingApiTests\Domain\Hotel;
 
 use PHPUnit\Framework\TestCase;
 use MappingApi\Domain\Geography\ValueObject\Address;
@@ -30,6 +30,9 @@ class HotelTest extends TestCase
 		// do nothing for now
 	}
 
+	/**
+	 * @return Hotel
+	 */
 	public function testCreate() : Hotel
     {
 		$country = new Country("United states of America", "US", "USD", ['North America']);

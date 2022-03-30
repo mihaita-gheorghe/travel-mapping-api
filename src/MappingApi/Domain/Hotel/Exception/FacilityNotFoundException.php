@@ -2,7 +2,7 @@
 
 namespace MappingApi\Domain\Hotel\Exception;
 
-use MappingApi\Domain\Api\Exception\CustomException;
+use MappingApi\Domain\Identity\Exception\CustomException;
 
 class FacilityNotFoundException extends \LogicException
 {

@@ -2,7 +2,7 @@
 
 namespace MappingApi\Domain\Mapping\Exception;
 
-use MappingApi\Domain\Api\Exception\CustomException;
+use MappingApi\Domain\Identity\Exception\CustomException;
 
 class InvalidArgumentTravelLocationException extends \InvalidArgumentException
 {
