@@ -2,8 +2,6 @@
 
 namespace MappingApi\Domain\Mapping\Model;
 
-use MappingApi\Domain\Hotel\model\HotelInterface;
-
 class UnmapTravelSystemHotel
 {
 	/**
@@ -21,5 +19,4 @@ class UnmapTravelSystemHotel
 		$this->travelSystemHotel = $travelSystemHotel;
 		$this->unmappedOn = new \DateTimeImmutable();
 	}
-
 }
